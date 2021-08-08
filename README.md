@@ -1,9 +1,10 @@
 # Airflow
 
 ### Links for Learning Purpose
-*https://airflow.apache.org/docs/stable/concepts.html#bitshift-composition*
+https://airflow.apache.org/docs/stable/concepts.html#bitshift-composition
 
 https://stackoverflow.com/questions/54579883/airflow-run-tasks-at-different-times-in-the-same-dag/54587355#54587355
+
 In the below example, you can have 4 dags running and each dag can have 4 tasks running at the same time. Other combinations are also possible.
 
 dag = DAG(
