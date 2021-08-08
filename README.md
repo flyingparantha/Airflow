@@ -11,14 +11,14 @@ dag = DAG(
     dag_id='sample_dag',
     default_args=default_args,
     schedule_interval='@daily',
-    # this will allow up to 16 tasks to be run at the same time
+    -- this will allow up to 16 tasks to be run at the same time
     concurrency=16,
-    # this will allow up to 4 dags to be run at the same time
+    -- this will allow up to 4 dags to be run at the same time
     max_active_runs=4,
 )
------------------------------------------------------------
+
 https://stackoverflow.com/questions/51325525/wiring-top-level-dags-together
 https://stackoverflow.com/questions/63565229/schedule-airflow-job-bi-weekly    ---- check this
 https://stackoverflow.com/questions/57104547/how-to-define-a-dag-that-scheduler-a-monthly-job-together-with-a-daily-job
 https://en.wikipedia.org/wiki/Cron#CRON_expression
-![image](https://user-images.githubusercontent.com/73533946/128638852-c159a44d-6d99-449a-85b0-ee719f16a005.png)
+
